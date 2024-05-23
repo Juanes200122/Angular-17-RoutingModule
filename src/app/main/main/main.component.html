@@ -1,1 +1,23 @@
-<p>main works!</p>
+<div class="page">
+    <header style="padding-left: 80px;">LOGO</header>
+    <div id="nav-container">
+        <div class="bg"></div>
+        <div class="button" tabindex="0">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+        <div id="nav-content" tabindex="0">
+            <ul>
+                <li><a routerLink="home_component">Home</a></li>
+                <li><a routerLink="blog_component">Blog</a></li>
+                <li><a routerLink="aboutcomponent">About</a></li>
+                <li><a routerLink="contact_component">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Main principal de la pagina-->
+    <main class="main_contain">
+        <router-outlet />
+    </main>
+</div>

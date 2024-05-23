@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
-
+import { HomepageComponent } from '../homepage/homepage.component';
+import { BlogComponent } from '../blog/blog.component';
+import { AboutComponent } from '../about/about.component';
+import { ContactComponent } from '../contact/contact.component';
 
 const routes: Routes = [
     {
@@ -11,23 +14,23 @@ const routes: Routes = [
             {
                 path: '',
                 pathMatch: 'full',
-                component: //##,
+                component: HomepageComponent,
             },        
             {
-                path: 'homepage',
+                path: 'home_component',
                 redirectTo: '',
             },
             {
-                path: 'weapons',
-                component: //##,
+                path: 'blog_component',
+                component: BlogComponent,
             },
             {
-                path: 'maps',
-                component: //##,
+                path: 'aboutcomponent',
+                component: AboutComponent,
             },
             {
-                path: 'agents',
-                component: //##,
+                path: 'contact_component',
+                component: ContactComponent,
             },
         ], 
     },
